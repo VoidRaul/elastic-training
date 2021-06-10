@@ -36,11 +36,10 @@ public class SimpleProductClient implements ProductClientInterface {
   }
 
   @Override
-  public SearchScrollHits<Product> scrollBy(String productName,
-      documentField field) {
+  public SearchScrollHits<Product> scrollBy(documentField field, String query) {
     return getSearchHits(
         new NativeSearchQueryBuilder()
-            .withQuery(QueryBuilders.matchQuery(field.toLowerCase(), productName))
+            .withQuery(QueryBuilders.matchQuery(field.toLowerCase(), query))
             .build());
   }
 

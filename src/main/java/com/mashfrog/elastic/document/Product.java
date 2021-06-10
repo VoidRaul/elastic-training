@@ -18,7 +18,7 @@ import org.springframework.data.elasticsearch.annotations.Setting;
 public class Product {
 
   public enum documentField {
-    NAME, DESCRIPTION, PRICE;
+    NAME, DESCRIPTION, PRICE, MANUFACTURER;
 
     public String toLowerCase() {
       return this.name().toLowerCase();

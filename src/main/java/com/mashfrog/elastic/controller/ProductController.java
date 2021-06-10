@@ -57,6 +57,6 @@ public class ProductController {
   public SearchScrollHits<Product> findAllProductsBy(
       @RequestParam String queryString,
       @RequestParam(defaultValue = "NAME") Product.documentField field) {
-    return productClient.scrollBy(queryString, field);
+    return productClient.scrollBy(field, queryString);
   }
 }

@@ -13,6 +13,5 @@ public interface ProductClientInterface {
 
   SearchScrollHits<Product> continueScroll(String scrollId);
 
-  SearchScrollHits<Product> scrollBy(String productName,
-      documentField field);
+  SearchScrollHits<Product> scrollBy(documentField field, String query);
 }
