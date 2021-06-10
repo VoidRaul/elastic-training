@@ -32,3 +32,6 @@ build/
 ### VS Code ###
 .vscode/
 /src/main/resources/60619316b4f92e43595976ce_605c9c8427508704ace5ef96_ES_shards-p-1080.png
+/.mvn/
+/mvnw
+/mvnw.cmd
