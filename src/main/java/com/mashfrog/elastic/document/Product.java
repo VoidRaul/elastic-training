@@ -12,7 +12,7 @@ import org.springframework.data.elasticsearch.annotations.Mapping;
 import org.springframework.data.elasticsearch.annotations.Setting;
 
 @Data
-@Document(indexName = "mashfrog_training_product")
+@Document(indexName ="#{@environment.getProperty('ELASTICSEARCH_INDEX')}" )
 @Mapping(mappingPath = "/elasticsearch/product/product_mapping.json")
 @Setting(settingPath = "/elasticsearch/product/product_settings.json")
 public class Product {
