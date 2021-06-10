@@ -1,0 +1,21 @@
+{
+  "properties": {
+    "_class": {
+      "type": "keyword",
+      "index": false,
+      "doc_values": false
+    },
+    "description": {
+      "type": "text"
+    },
+    "name": {
+      "type": "text"
+    },
+    "manufacturer": {
+      "type": "keyword"
+    },
+    "price": {
+      "type": "float"
+    }
+  }
+}
