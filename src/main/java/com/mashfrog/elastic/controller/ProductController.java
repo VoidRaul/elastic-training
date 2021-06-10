@@ -49,7 +49,7 @@ public class ProductController {
   }
 
   @GetMapping("/scroll/{scrollId}")
-  public SearchScrollHits<Product> continueScrollAll(@PathVariable String scrollId) {
+  public SearchScrollHits<Product> continueScroll(@PathVariable String scrollId) {
     return productClient.continueScroll(scrollId);
   }
 
